@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import "./app.scss";
 import UserList from "./Pages/UserList/UserList";
 import User from "./Pages/User/User";
+import NewUser from "./Pages/NewUser/NewUser";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/user/:userId">
             <User />
+          </Route>
+          <Route path="/newUser">
+            <NewUser />
           </Route>
         </Switch>
       </div>
