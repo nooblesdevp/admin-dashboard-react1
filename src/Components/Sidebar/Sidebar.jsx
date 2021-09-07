@@ -15,6 +15,7 @@ import {
   WorkOutline,
 } from "@material-ui/icons";
 import "./sidebar.scss";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -42,14 +43,18 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <PersonOutline />
-              User
-            </li>
-            <li className="sidebarListItem">
-              <Storefront />
-              Products
-            </li>
+            <Link to="/users" className="link">
+              <li className="sidebarListItem">
+                <PersonOutline />
+                Users
+              </li>
+            </Link>
+            <Link to="/producs" className="link">
+              <li className="sidebarListItem">
+                <Storefront />
+                Products
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <AttachMoney />
               Transactions
