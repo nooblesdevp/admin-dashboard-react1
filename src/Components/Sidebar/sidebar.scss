@@ -1,15 +1,16 @@
 .sidebar {
   flex: 1;
-  height: calc(100vh - 50px);
+  height: auto;
   position: sticky;
   background: whitesmoke;
-  // background: rgb(112, 13, 13);
   top: 50px;
   .sidebarWrapper {
     padding: 20px;
     color: #555;
+    height: 100vh;
     .sidebarMenu {
       margin-bottom: 10px;
+      // background: whitesmoke;
     }
     .sidebarList {
       list-style: none;
